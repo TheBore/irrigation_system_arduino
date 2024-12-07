@@ -25,7 +25,7 @@ Button buttons[] = {
   {8, false, true}, // Green button
   {6, false, true}, // Black button
   {4, false, true}, // Yellow buton
-  {2, false, true}, // Green button
+  {2, false, true}, // Red button
   {12, false, true}
 };
 
@@ -78,14 +78,14 @@ void handleButtonPress(int buttonIndex) {
     case 0: // Green button
       displayTemperatureAndHumidity();
       break;
-    case 1: // Orange button
+    case 1: // Yellow button
       displayPressureAndAltitude();
       break;
     // Add cases for other buttons
-    case 2:
+    case 2: // Black button
       displayMoisture();
       break;
-    case 3:
+    case 3: // Red button
       // Additional button actions
       pump();
       break;
